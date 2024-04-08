@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Fitness Pro</title>
+    <meta name="description" content="A brief description" />
+    <meta
+      name="author"
+    />
+
+    <!-- Include your CSS files here -->
+    <link
+      rel="preload"
+      as="style"
+      href="{% static 'css/common.css' %}"
+      onload="this.rel = 'stylesheet'"
+    />
+
+    <link
+      rel="preload"
+      as="style"
+      href="{% static 'css/signin.css' %}"
+      onload="this.rel = 'stylesheet'"
+    />
+    
+    <link
+      rel="preload"
+      as="style"
+      href="{% static 'css/createaccount.css' %}"
+      onload="this.rel = 'stylesheet'"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--Header content-->
+    {% include 'partials/_header.html' %}
+
+    <main>{% block content %} {% endblock %}</main>
+
+    <!--Footer content-->
+    {% include 'partials/_footer.html' %}
+    <!-- Replace this comment with your code  -->
+  </body>
+</html>

@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+:root {
+  --white: #ffffff;
+  --gray: #767676;
+  --red: #ff0000;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Manrope", sans-serif;
+  font: inherit;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.2rem;
+}
+
+.fitnes-logo {
+  height: 5rem;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 3rem;
+}
+
+.header-nav-link {
+  color: var(--gray);
+  font-size: 1rem;
+}
+
+.sign-in {
+  border: none;
+  background-color: var(--red);
+  color: var(--white);
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.2rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+}
+
+.twenty-four-hour {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 10rem;
+  text-align: center;
+  gap: 2.2rem;
+}
+
+.title {
+  color: var(--red);
+  font-size: 2rem;
+}
+
+.description {
+  font-size: 1.2rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+  color: var(--white);
+  gap: 5rem;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 4rem 9rem 0;
+}
+.first {
+  grid-column: 1;
+  grid-row: span 2;
+}
+
+.second,
+.third {
+  grid-column: 2;
+}
+
+.footer-link {
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+.footer-icons ion-icon {
+  padding-right: 1rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 9.5rem 2rem;
+}
+
+.footer-bottom-ul {
+  display: flex;
+}
+
+.footer-bottom-ul a {
+  font-size: 0.8rem;
+  color: var(--white);
+}

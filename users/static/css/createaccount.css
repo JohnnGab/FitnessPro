@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+:root {
+  --white: #ffffff;
+  --gray: #767676;
+  --red: #ff0000;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: inherit;
+  font-weight: 500;
+}
+
+form {
+  margin: 5rem 20rem 0;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 33%;
+  padding: 1rem;
+  border: 0.2rem solid #ccc;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+.submit-button {
+  width: 33%;
+  padding: 0.8rem 1.6rem;
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block content %}
+<form>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="email"
+        placeholder="Enter email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        class="password"
+        placeholder="password"
+        required
+      />
+    </div>
+    <button class="submit-button">Sign In</button>
+    <div class="create-account">
+      <p class="form-description">You don't have an account?</p>
+      <a href="{% url 'create_account' %}" class="create">Create</a>
+    </div>
+</form>
+{% endblock %}
