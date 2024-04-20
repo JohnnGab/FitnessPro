@@ -8,9 +8,7 @@
 
     <title>Fitness Pro</title>
     <meta name="description" content="A brief description" />
-    <meta
-      name="author"
-    />
+    <meta name="author" />
 
     <!-- Include your CSS files here -->
     <link
@@ -26,7 +24,7 @@
       href="{% static 'css/signin.css' %}"
       onload="this.rel = 'stylesheet'"
     />
-    
+
     <link
       rel="preload"
       as="style"
@@ -42,7 +40,7 @@
     />
   </head>
 
-  <body>
+  <body class="{% block body_class %}{% endblock %}">
     <!--Header content-->
     {% include 'partials/_header.html' %}
 

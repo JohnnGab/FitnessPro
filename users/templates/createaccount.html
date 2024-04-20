@@ -1,36 +1,76 @@
 {% extends 'base.html' %}
-{% load static %} 
+
+{% load static %}
+
+{% block body_class%}
+create-account-page
+{% endblock %}
 
 {% block content %}
-<form method="POST" action="{% url 'create_account' %}">
-  {% csrf_token %} 
+<form method="POST" action="{% url 'create_account' %}" novalidate>
+  {% csrf_token %}
   <div class="form-group">
     <label for="firstname">First Name</label>
-    <input type="text" id="firstname" name="first_name" class="firstname" placeholder="Enter your First Name" required />
+    <input
+      type="text"
+      id="firstname"
+      name="first_name"
+      class="firstname"
+      placeholder="Enter your First Name"
+      required
+    />
     <div class="error-message" id="firstname-error"></div>
   </div>
 
   <div class="form-group">
     <label for="lastname">Last Name</label>
-    <input type="text" id="lastname" name="last_name" class="lastname" placeholder="Enter your Last Name" required />
+    <input
+      type="text"
+      id="lastname"
+      name="last_name"
+      class="lastname"
+      placeholder="Enter your Last Name"
+      required
+    />
     <div class="error-message" id="lastname-error"></div>
   </div>
 
   <div class="form-group">
     <label for="email">Email</label>
-    <input type="text" id="email" name="email" class="email" placeholder="Enter your email" required />
+    <input
+      type="text"
+      id="email"
+      name="email"
+      class="email"
+      placeholder="Enter your email"
+      required
+    />
     <div class="error-message" id="email-error"></div>
   </div>
 
   <div class="form-group">
     <label for="password">Password</label>
-    <input type="password" id="password1" name="password1" class="password" placeholder="Create password" required />
+    <input
+      type="password"
+      id="password1"
+      name="password1"
+      class="password"
+      placeholder="Create password"
+      required
+    />
     <div class="error-message" id="password-error"></div>
   </div>
 
   <div class="form-group">
     <label for="passwordcheck">Confirm Password</label>
-    <input type="password" id="password" name="password2" class="passwordcheck" placeholder="Confirm password" required />
+    <input
+      type="password"
+      id="password"
+      name="password2"
+      class="passwordcheck"
+      placeholder="Confirm password"
+      required
+    />
     <div class="error-message" id="passwordcheck-error"></div>
   </div>
 
