@@ -35,7 +35,7 @@ class CustomUserManager(BaseUserManager):
 
 class CustomUser(AbstractUser):
     username = None  # Exclude the username field
-    email = models.EmailField(_('email address'), unique=True)
+    email = models.EmailField(unique=True, verbose_name=_('Email'))
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []

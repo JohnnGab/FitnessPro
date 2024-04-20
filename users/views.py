@@ -11,8 +11,9 @@ from django.http import JsonResponse
 from django.views import View
 from django.contrib.auth import get_user_model, authenticate, login
 from django.views.generic.edit import CreateView
-from .forms import CustomUserCreationForm
+from .forms import CustomUserCreationForm, CustomAuthForm
 from django.urls import reverse
+from django.contrib.auth.views import LoginView
 
 class CreateAccountView(CreateView):
     form_class = CustomUserCreationForm
@@ -52,7 +53,18 @@ class CreateAccountView(CreateView):
         # Return error response as JSON
         return JsonResponse({'success': False, 'errors': error_messages}, status=400)
     
+class CustomLoginView(LoginView):
+    form_class = CustomAuthForm
+    template_name = 'signin.html'
 
-def SigninView(request):
-    # This view just renders the signin.html template.
-    return render(request, 'signin.html')
+    def form_valid(self, form):
+        # Perform the login operation
+        super().form_valid(form)
+        # Return a JSON response indicating success
+        return JsonResponse({"success": True, "message": "Login successful"})
+
+    def form_invalid(self, form):
+        # Get all form errors
+        errors = form.errors.as_json()
+        # Return a JSON response indicating an error with the form data
+        return JsonResponse({"success": False, "errors": errors}, status=400)
