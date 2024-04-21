@@ -46,6 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
               displayError(inputElement, error);
             });
           });
+        } else{
+          window.location.href = data.redirect_url;   
         }
       })
       .catch((error) => console.error("Error:", error));

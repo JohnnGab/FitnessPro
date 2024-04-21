@@ -35,7 +35,9 @@ class CreateAccountView(CreateView):
         if authenticated_user:
             login(self.request, authenticated_user)
         
-        return redirect('home')
+        redirect_url = reverse('home')
+        
+        return JsonResponse({'success': True, 'redirect_url': redirect_url})
 
     def form_invalid(self, form):
         # Collect form errors
