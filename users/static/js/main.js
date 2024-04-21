@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const firstnameInput = document.getElementById("firstname");
   const lastnameInput = document.getElementById("lastname");
 
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     clearErrors();
@@ -25,12 +26,15 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    // Construct FormData and send the POST request
+    const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
     const formData = new FormData(form);
 
     fetch(createAccountUrl, {
       method: "POST",
       body: formData,
+      headers: {
+        'X-CSRFToken': csrftoken  // Ensure CSRF token is included
+      },
     })
       .then((response) => response.json())
       .then((data) => {
@@ -42,9 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
               displayError(inputElement, error);
             });
           });
-        } else {
-          // Success logic here
-          alert("Registration successful");
         }
       })
       .catch((error) => console.error("Error:", error));
