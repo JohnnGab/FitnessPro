@@ -14,6 +14,7 @@ from django.views.generic.edit import CreateView
 from .forms import CustomUserCreationForm, CustomAuthForm
 from django.urls import reverse
 from django.contrib.auth.views import LoginView
+from django.views.decorators.http import require_GET
 
 class CreateAccountView(CreateView):
     form_class = CustomUserCreationForm
@@ -34,11 +35,7 @@ class CreateAccountView(CreateView):
         if authenticated_user:
             login(self.request, authenticated_user)
         
-        # Define the redirect URL after successful registration
-        redirect_url = reverse('home')
-
-        # Return success response as JSON with redirect URL
-        return JsonResponse({'success': True, 'message': 'Registration successful', 'redirect_url': redirect_url}, status=201)
+        return redirect('home')
 
     def form_invalid(self, form):
         # Collect form errors
@@ -68,3 +65,7 @@ class CustomLoginView(LoginView):
         errors = form.errors.as_json()
         # Return a JSON response indicating an error with the form data
         return JsonResponse({"success": False, "errors": errors}, status=400)
+    
+@require_GET
+def check_authentication_status(request):
+    return JsonResponse({'isAuthenticated': request.user.is_authenticated})
