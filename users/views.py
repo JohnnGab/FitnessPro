@@ -68,4 +68,10 @@ class CustomLoginView(LoginView):
     
 @require_GET
 def check_authentication_status(request):
-    return JsonResponse({'isAuthenticated': request.user.is_authenticated})
+    if request.user.is_authenticated:
+        return JsonResponse({
+            'isAuthenticated': True,
+            'userName': request.user.first_name
+        })
+    else:
+        return JsonResponse({'isAuthenticated': False})
