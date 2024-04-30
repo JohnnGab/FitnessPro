@@ -6,7 +6,7 @@ signin-page
 {% endblock %}
 
 {% block content %}
-<form method="POST">
+<form method="POST" novalidate>
   {% csrf_token %} 
     <div class="form-group">
       <label for="email">Email</label>
@@ -36,4 +36,8 @@ signin-page
       <a href="{% url 'create_account' %}" class="create">Create</a>
     </div>
 </form>
+<script type="text/javascript">
+  const signinUrl = "{% url 'signin' %}";
+</script>
+<script src="{% static 'js/signin.js' %}"></script>
 {% endblock %}

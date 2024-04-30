@@ -1,7 +1,7 @@
 {% load static %}
 <header class="header">
   <a href=" ">
-    <img class="fitness-logo" src="{% static 'img/fitnesslogo.png'}" alt="fitnesslogo" />
+    <img class="fitness-logo" src="{% static 'img/fitnesslogo.png'%}" alt="fitnesslogo" />
   </a>
   <nav class="header-nav">
     <ul class="header-nav-list">
@@ -12,8 +12,16 @@
         <a class="header-nav-link" href="#">My Bookings</a>
       </li>
     </ul>
-    <a href="{% url 'signin' %}">
+    <a class="authentication" href="{% url 'signin' %}">
       <button class="sign-in">Sign In</button>
     </a>
   </nav>
 </header>
+<script type="text/javascript">
+const checkAuthUrl = "{% url 'check_auth' %}";
+const logoutUrl = "{% url 'logout' %}";
+</script>
+
+
+
+<script src="{% static 'js/header.js' %}"></script>

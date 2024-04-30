@@ -14,15 +14,9 @@
 }
 
 body {
-  width: 100%;
-  height: 100%;
-  font-family: "Manrope", sans-serif;
-  font: inherit;
-  font-weight: 500;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 ul {
@@ -35,11 +29,11 @@ a {
 }
 
 .header {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2.2rem;
+  padding: 0 9rem;
 }
 
 .fitness-logo {
@@ -63,11 +57,11 @@ a {
 }
 
 .sign-in {
-  border: none;
   background-color: var(--red);
   color: var(--white);
   padding: 0.8rem 1.6rem;
   border-radius: 0.2rem;
+  border: none;
   font: inherit;
   cursor: pointer;
 }
@@ -75,7 +69,7 @@ a {
 main {
   width: 100%;
   margin: 6rem 0 9.7rem;
-  padding: 0 13rem;
+  flex-grow: 1;
 }
 
 form {
@@ -85,7 +79,7 @@ form {
 .twenty-four-hour {
   display: flex;
   flex-direction: column;
-  padding: 5rem 10rem;
+  padding: 5rem 9rem;
   text-align: center;
   gap: 2.2rem;
 }
@@ -110,7 +104,7 @@ form {
 
 .footer-top {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(1, 1fr); */
   padding: 4rem 9rem 0;
 }
 .first {
@@ -135,7 +129,7 @@ form {
 .footer-bottom {
   display: flex;
   justify-content: space-between;
-  padding: 0 9.5rem 2rem;
+  padding: 0 9rem 2rem;
 }
 
 .footer-bottom-ul {

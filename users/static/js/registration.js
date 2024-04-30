@@ -65,3 +65,4 @@ document.addEventListener("DOMContentLoaded", function () {
     errorMessages.forEach((error) => error.remove());
   }
 });
+

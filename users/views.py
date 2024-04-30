@@ -13,7 +13,7 @@ from django.contrib.auth import get_user_model, authenticate, login
 from django.views.generic.edit import CreateView
 from .forms import CustomUserCreationForm, CustomAuthForm
 from django.urls import reverse
-from django.contrib.auth.views import LoginView
+from django.contrib.auth.views import LoginView, LogoutView
 from django.views.decorators.http import require_GET
 
 class CreateAccountView(CreateView):
@@ -59,8 +59,9 @@ class CustomLoginView(LoginView):
     def form_valid(self, form):
         # Perform the login operation
         super().form_valid(form)
+        redirect_url = reverse('home')
         # Return a JSON response indicating success
-        return JsonResponse({"success": True, "message": "Login successful"})
+        return JsonResponse({"success": True, 'redirect_url': redirect_url})
 
     def form_invalid(self, form):
         # Get all form errors
@@ -77,3 +78,11 @@ def check_authentication_status(request):
         })
     else:
         return JsonResponse({'isAuthenticated': False})
+    
+class CustomLogoutView(LogoutView):
+    def dispatch(self, request, *args, **kwargs):
+        # Ensure CSRF check is done properly here if needed
+        response = super().dispatch(request, *args, **kwargs)
+        if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+            return JsonResponse({'status': 'success'}, status=200)
+        return response
