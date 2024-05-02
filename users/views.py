@@ -81,7 +81,6 @@ def check_authentication_status(request):
     
 class CustomLogoutView(LogoutView):
     def dispatch(self, request, *args, **kwargs):
-        # Ensure CSRF check is done properly here if needed
         response = super().dispatch(request, *args, **kwargs)
         if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
             return JsonResponse({'status': 'success'}, status=200)
