@@ -67,7 +67,7 @@ class CustomLoginView(LoginView):
         # Get all form errors
         errors = form.errors.as_json()
         # Return a JSON response indicating an error with the form data
-        return JsonResponse({"success": False, "errors": errors}, status=400)
+        return JsonResponse({"success": False, "error_message": "Please enter a correct Email and password."}, status=400)
     
 @require_GET
 def check_authentication_status(request):

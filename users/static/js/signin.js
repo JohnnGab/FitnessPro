@@ -52,8 +52,7 @@ const signIn = async () => {
         // Redirect user if login is successful
         window.location.href = responseData.redirect_url;
       } else {
-        const errors = JSON.parse(responseData.errors);
-        displayError(passwordElement, errors.username[0].message);
+        displayError(passwordElement, responseData.error_message);
       }
 
     } catch (error) {
