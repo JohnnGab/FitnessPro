@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block body_class%}
+booking
+{% endblock %}
+
+{% block content %}
+<div id="calendar-container">
+    <div id="header">
+        <button id="prev">&#10094;</button>
+        <h1 id="monthAndYear"></h1>
+        <button id="next">&#10095;</button>
+    </div>
+    <table id="calendar">
+        <thead>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<script src="{% static 'js/booking.js' %}"></script>
+{% endblock %}
