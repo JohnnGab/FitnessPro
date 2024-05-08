@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 
 class Classes(models.Model):
     class_name = models.CharField(max_length=30)
@@ -32,3 +33,16 @@ class ClassSchedule(models.Model):
 
     def __str__(self):
         return f"{self.classes} on {self.weekday} at {self.time.strftime('%H:%M')}"
+    
+class Reservation(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    class_schedule = models.ForeignKey(ClassSchedule, on_delete=models.CASCADE)
+    date = models.DateField()
+
+    class Meta:
+        unique_together = ('user', 'class_schedule', 'date')
+
+    def __str__(self):
+        return f"{self.user.username} reserved {self.class_schedule} on {self.date}"
+
+
