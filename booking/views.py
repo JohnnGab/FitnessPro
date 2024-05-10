@@ -18,7 +18,7 @@ class FetchClassSchedules(View):
         if selected_date_str:
             try:
                 selected_date = datetime.strptime(selected_date_str, '%Y-%m-%d')
-                day_name = selected_date.strftime("%A")
+                day_name = selected_date.strftime("%a")
                 schedules = ClassSchedule.objects.filter(weekday__day_name=day_name).annotate(
                     booked=Count('reservation_set__id', filter=Q(reservation_set__date=selected_date)),
                     available=F('capacity') - F('booked')
