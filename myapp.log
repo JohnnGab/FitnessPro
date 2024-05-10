@@ -568,6 +568,7 @@ INFO 2024-05-08 18:33:08,573 autoreload 13039 131835643363776 Watching for file 
 WARNING 2024-05-08 18:33:23,259 log 13039 131835599050304 Not Found: /users/booking/booking.js
 WARNING 2024-05-08 18:38:33,917 log 13039 131835599050304 Not Found: /favicon.ico
 WARNING 2024-05-08 18:38:34,199 log 13039 131835346540096 Not Found: /favicon.ico
+<<<<<<< Updated upstream
 INFO 2024-05-10 21:35:18,049 autoreload 42668 40412 Watching for file changes with StatReloader
 WARNING 2024-05-10 21:35:34,454 log 42668 36344 Bad Request: /users/booking/
 INFO 2024-05-10 21:37:04,460 autoreload 41016 47060 Watching for file changes with StatReloader
@@ -600,3 +601,1641 @@ INFO 2024-05-10 21:49:44,053 autoreload 42912 40372 C:\Users\jgabritchidze\Deskt
 INFO 2024-05-10 21:49:44,738 autoreload 39260 47112 Watching for file changes with StatReloader
 INFO 2024-05-10 21:50:10,162 autoreload 20560 38564 Watching for file changes with StatReloader
 WARNING 2024-05-10 21:52:59,198 log 20560 43292 Not Found: /favicon.ico
+=======
+INFO 2024-05-09 06:31:07,433 autoreload 4931 134735119794624 Watching for file changes with StatReloader
+WARNING 2024-05-09 06:31:21,887 log 4931 134735003121216 Not Found: /favicon.ico
+WARNING 2024-05-09 06:37:50,520 log 4931 134735003121216 Not Found: /favicon.ico
+WARNING 2024-05-09 06:37:50,741 log 4931 134734969550400 Not Found: /favicon.ico
+WARNING 2024-05-09 06:42:21,954 log 4931 134735003121216 Not Found: /favicon.ico
+WARNING 2024-05-09 06:42:22,113 log 4931 134734977943104 Not Found: /favicon.ico
+WARNING 2024-05-09 06:42:22,301 log 4931 134735003121216 Not Found: /favicon.ico
+INFO 2024-05-10 12:13:06,712 autoreload 6544 136558688866752 Watching for file changes with StatReloader
+WARNING 2024-05-10 12:13:17,233 log 6544 136558636136000 Not Found: /favicon.ico
+WARNING 2024-05-10 12:16:24,927 log 6544 136558409672256 Not Found: /favicon.ico
+WARNING 2024-05-10 12:36:57,136 log 6544 136558636136000 Not Found: /favicon.ico
+WARNING 2024-05-10 12:36:58,389 log 6544 136558636136000 Not Found: /favicon.ico
+WARNING 2024-05-10 12:38:48,941 log 6544 136558409672256 Not Found: /favicon.ico
+WARNING 2024-05-10 12:38:49,120 log 6544 136558644528704 Not Found: /favicon.ico
+INFO 2024-05-10 16:52:42,562 autoreload 11135 125010693509568 Watching for file changes with StatReloader
+ERROR 2024-05-10 17:12:22,661 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:12:22,749 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:12:22,888 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:12:22,952 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:12:40,681 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:12:40,743 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:12:40,942 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:12:40,997 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:12:41,375 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+ERROR 2024-05-10 17:12:41,741 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:12:41,798 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:12:42,020 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:12:42,077 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:12:59,262 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:12:59,315 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:12:59,499 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:12:59,554 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:12:59,696 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:12:59,756 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:14:12,370 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:14:12,428 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:14:12,660 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:14:12,714 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:14:12,872 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:14:12,931 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:14:13,077 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:14:13,131 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:14:13,275 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:14:13,329 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:14:13,477 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:14:13,535 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:15:00,553 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:15:00,610 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:15:00,821 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:15:00,883 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:15:01,029 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:15:01,088 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:15:01,216 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:15:01,281 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:15:01,424 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:15:01,484 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:15:01,587 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:15:01,649 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:16:21,103 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:16:21,160 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:16:21,297 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:16:21,352 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:16:21,500 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:16:21,553 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:16:21,688 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:16:21,749 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:16:21,881 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:16:21,932 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:17:38,598 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:17:38,656 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:17:38,807 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:17:38,863 log 11135 125010649167424 Not Found: /favicon.ico
+ERROR 2024-05-10 17:17:38,991 log 11135 125010649167424 Internal Server Error: /users/booking/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/template/defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'fetch_schedules' not found. 'fetch_schedules' is not a valid view function or pattern name.
+WARNING 2024-05-10 17:17:39,042 log 11135 125010649167424 Not Found: /favicon.ico
+INFO 2024-05-10 17:27:20,146 autoreload 12404 134683630068160 Watching for file changes with StatReloader
+WARNING 2024-05-10 17:27:43,893 log 12404 134683585689152 Bad Request: /users/booking/
+WARNING 2024-05-10 17:28:20,188 log 12404 134683585689152 Bad Request: /users/booking/
+WARNING 2024-05-10 17:28:24,893 log 12404 134683585689152 Bad Request: /users/booking/
+WARNING 2024-05-10 17:29:11,634 log 12404 134683585689152 Not Found: /favicon.ico
+WARNING 2024-05-10 17:29:11,839 log 12404 134683559462464 Not Found: /favicon.ico
+WARNING 2024-05-10 17:29:13,766 log 12404 134683559462464 Bad Request: /users/booking/
+INFO 2024-05-10 17:29:45,775 autoreload 12718 129312928588224 Watching for file changes with StatReloader
+WARNING 2024-05-10 17:30:05,189 log 12718 129312884274752 Bad Request: /users/booking/
+>>>>>>> Stashed changes
+INFO 2024-05-10 18:12:42,963 autoreload 14096 127601047929280 Watching for file changes with StatReloader
+WARNING 2024-05-10 18:12:57,270 log 14096 127600928224832 Not Found: /favicon.ico
+WARNING 2024-05-10 18:14:02,619 log 14096 127600894654016 Not Found: /favicon.ico
+WARNING 2024-05-10 18:14:02,997 log 14096 127600894654016 Not Found: /favicon.ico
+WARNING 2024-05-10 18:15:35,379 log 14096 127600894654016 Not Found: /favicon.ico
+WARNING 2024-05-10 18:15:35,803 log 14096 127600919832128 Not Found: /favicon.ico
+WARNING 2024-05-10 18:17:26,659 log 14096 127600886261312 Not Found: /favicon.ico
+WARNING 2024-05-10 18:17:26,807 log 14096 127600911439424 Not Found: /favicon.ico
+WARNING 2024-05-10 18:21:12,005 log 14096 127600911439424 Not Found: /favicon.ico
+WARNING 2024-05-10 18:29:22,191 log 14096 127600911439424 Not Found: /favicon.ico
+WARNING 2024-05-10 18:29:22,575 log 14096 127600919832128 Not Found: /favicon.ico
+WARNING 2024-05-10 18:45:33,930 log 14096 127600928224832 Not Found: /favicon.ico
+WARNING 2024-05-10 18:45:34,098 log 14096 127600903046720 Not Found: /favicon.ico
+WARNING 2024-05-10 18:45:34,285 log 14096 127600911439424 Not Found: /favicon.ico
+ERROR 2024-05-10 18:45:36,772 log 14096 127600911439424 Internal Server Error: /booking/fetch-schedules/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/giorgi/Desktop/FitnessPro/booking/views.py", line 22, in get
+    schedules = ClassSchedule.objects.filter(weekday__day_name=day_name).annotate(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/query.py", line 1680, in _annotate
+    clone.query.add_annotation(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1198, in add_annotation
+    annotation = annotation.resolve_expression(self, allow_joins=True, reuse=None)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/aggregates.py", line 65, in resolve_expression
+    c = super().resolve_expression(query, allow_joins, reuse, summarize)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/expressions.py", line 975, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/expressions.py", line 854, in resolve_expression
+    return query.resolve_ref(self.name, allow_joins, reuse, summarize)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 2014, in resolve_ref
+    join_info = self.setup_joins(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1867, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'reservation_set' into field. Choices are: capacity, classes, classes_id, duration, id, reservation, time, weekday, weekday_id
+WARNING 2024-05-10 18:46:12,682 log 14096 127600911439424 Not Found: /favicon.ico
+WARNING 2024-05-10 18:46:12,910 log 14096 127600886261312 Not Found: /favicon.ico
+WARNING 2024-05-10 18:46:13,403 log 14096 127600903046720 Not Found: /favicon.ico
+WARNING 2024-05-10 18:46:15,273 log 14096 127600903046720 Not Found: /booking/booking/fetchSchedulesUrl + '
+WARNING 2024-05-10 18:48:44,555 log 14096 127600919832128 Not Found: /favicon.ico
+WARNING 2024-05-10 18:48:44,706 log 14096 127600919832128 Not Found: /favicon.ico
+WARNING 2024-05-10 18:48:45,092 log 14096 127600919832128 Not Found: /favicon.ico
+ERROR 2024-05-10 18:48:47,045 log 14096 127600919832128 Internal Server Error: /booking/fetch-schedules/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/giorgi/Desktop/FitnessPro/booking/views.py", line 22, in get
+    schedules = ClassSchedule.objects.filter(weekday__day_name=day_name).annotate(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/query.py", line 1680, in _annotate
+    clone.query.add_annotation(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1198, in add_annotation
+    annotation = annotation.resolve_expression(self, allow_joins=True, reuse=None)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/aggregates.py", line 65, in resolve_expression
+    c = super().resolve_expression(query, allow_joins, reuse, summarize)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/expressions.py", line 975, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/expressions.py", line 854, in resolve_expression
+    return query.resolve_ref(self.name, allow_joins, reuse, summarize)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 2014, in resolve_ref
+    join_info = self.setup_joins(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1867, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'reservation_set' into field. Choices are: capacity, classes, classes_id, duration, id, reservation, time, weekday, weekday_id
+WARNING 2024-05-10 18:56:48,485 log 14096 127600928224832 Not Found: /favicon.ico
+WARNING 2024-05-10 18:56:48,867 log 14096 127600919832128 Not Found: /favicon.ico
+ERROR 2024-05-10 18:56:50,800 log 14096 127600919832128 Internal Server Error: /booking/fetch-schedules/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/giorgi/Desktop/FitnessPro/booking/views.py", line 22, in get
+    schedules = ClassSchedule.objects.filter(weekday__day_name=day_name).annotate(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/query.py", line 1680, in _annotate
+    clone.query.add_annotation(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1198, in add_annotation
+    annotation = annotation.resolve_expression(self, allow_joins=True, reuse=None)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/aggregates.py", line 65, in resolve_expression
+    c = super().resolve_expression(query, allow_joins, reuse, summarize)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/expressions.py", line 975, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/expressions.py", line 854, in resolve_expression
+    return query.resolve_ref(self.name, allow_joins, reuse, summarize)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 2014, in resolve_ref
+    join_info = self.setup_joins(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1867, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'reservation_set' into field. Choices are: capacity, classes, classes_id, duration, id, reservation, time, weekday, weekday_id
+WARNING 2024-05-10 19:04:13,859 log 14096 127600886261312 Not Found: /favicon.ico
+WARNING 2024-05-10 19:05:22,835 log 14096 127600886261312 Not Found: /favicon.ico
+WARNING 2024-05-10 19:05:23,121 log 14096 127600886261312 Not Found: /favicon.ico
+WARNING 2024-05-10 19:05:29,439 log 14096 127600919832128 Not Found: /favicon.ico
+WARNING 2024-05-10 19:05:29,956 log 14096 127600928224832 Not Found: /favicon.ico
+WARNING 2024-05-10 19:05:30,118 log 14096 127600894654016 Not Found: /favicon.ico
+WARNING 2024-05-10 19:06:01,669 log 14096 127600894654016 Not Found: /favicon.ico
+WARNING 2024-05-10 19:06:02,041 log 14096 127600886261312 Not Found: /favicon.ico
+ERROR 2024-05-10 19:06:03,925 log 14096 127600886261312 Internal Server Error: /booking/fetch-schedules/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/giorgi/Desktop/FitnessPro/booking/views.py", line 22, in get
+    schedules = ClassSchedule.objects.filter(weekday__day_name=day_name).annotate(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/query.py", line 1680, in _annotate
+    clone.query.add_annotation(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1198, in add_annotation
+    annotation = annotation.resolve_expression(self, allow_joins=True, reuse=None)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/aggregates.py", line 65, in resolve_expression
+    c = super().resolve_expression(query, allow_joins, reuse, summarize)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/expressions.py", line 975, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/expressions.py", line 854, in resolve_expression
+    return query.resolve_ref(self.name, allow_joins, reuse, summarize)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 2014, in resolve_ref
+    join_info = self.setup_joins(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1867, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'reservation_set' into field. Choices are: capacity, classes, classes_id, duration, id, reservation, time, weekday, weekday_id
+INFO 2024-05-10 19:14:18,688 autoreload 14096 127601047929280 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-10 19:14:18,894 autoreload 15400 132938616762816 Watching for file changes with StatReloader
+WARNING 2024-05-10 19:14:30,165 log 15400 132938456868416 Not Found: /favicon.ico
+WARNING 2024-05-10 19:14:30,350 log 15400 132938498831936 Not Found: /favicon.ico
+ERROR 2024-05-10 19:14:32,399 log 15400 132938498831936 Internal Server Error: /booking/fetch-schedules/
+WARNING 2024-05-10 19:15:31,463 log 15400 132938498831936 Not Found: /favicon.ico
+ERROR 2024-05-10 19:15:33,648 log 15400 132938498831936 Internal Server Error: /booking/fetch-schedules/
+WARNING 2024-05-10 19:17:13,176 log 15400 132938498831936 Not Found: /favicon.ico
+WARNING 2024-05-10 19:17:13,369 log 15400 132938473653824 Not Found: /favicon.ico
+WARNING 2024-05-10 19:17:13,654 log 15400 132938473653824 Not Found: /favicon.ico
+ERROR 2024-05-10 19:17:15,549 log 15400 132938473653824 Internal Server Error: /booking/fetch-schedules/
+INFO 2024-05-10 19:18:49,400 autoreload 15400 132938616762816 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-10 19:18:49,615 autoreload 15627 134714990399936 Watching for file changes with StatReloader
+WARNING 2024-05-10 19:18:56,165 log 15627 134714946045504 Not Found: /favicon.ico
+WARNING 2024-05-10 19:18:56,442 log 15627 134714946045504 Not Found: /favicon.ico
+ERROR 2024-05-10 19:18:58,250 log 15627 134714946045504 Internal Server Error: /booking/fetch-schedules/
+INFO 2024-05-10 19:28:09,401 autoreload 15627 134714990399936 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-10 19:28:09,618 autoreload 15830 135550508163520 Watching for file changes with StatReloader

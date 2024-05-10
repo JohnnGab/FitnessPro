@@ -2,7 +2,7 @@
 {% load static %} 
 
 {% block body_class%}
-booking
+booking-page
 {% endblock %}
 
 {% block content %}
@@ -27,5 +27,13 @@ booking
         <tbody></tbody>
     </table>
 </div>
+<div class="list-container">
+    <ul id="exercise-list"></ul>
+</div>
+
 <script src="{% static 'js/booking.js' %}"></script>
+<script type="text/javascript">
+    const fetchSchedulesUrl = "{% url 'fetch_schedules' %}";
+    const bookClassUrl = "{% url 'book_class' %}";
+</script>
 {% endblock %}
