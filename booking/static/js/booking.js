@@ -65,6 +65,7 @@ function selectDate(cell) {
   fetch(urlWithParams)
     .then(response => response.json())
     .then(data => {
+      console.log(data);
       displayExercises(data);
     })
     .catch(error => console.error('Error fetching exercises:', error));

@@ -20,7 +20,7 @@ class FetchClassSchedules(View):
                 selected_date = datetime.strptime(selected_date_str, '%Y-%m-%d')
                 day_name = selected_date.strftime("%a")
                 schedules = ClassSchedule.objects.filter(weekday__day_name=day_name).annotate(
-                    booked=Count('reservation_set__id', filter=Q(reservation_set__date=selected_date)),
+                    booked=Count('reservation__id', filter=Q(reservation__date=selected_date)),
                     available=F('capacity') - F('booked')
                 ).values('id', 'classes__class_name', 'time', 'available', 'capacity')
                 return JsonResponse(list(schedules), safe=False)
