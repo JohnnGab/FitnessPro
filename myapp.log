@@ -568,3 +568,35 @@ INFO 2024-05-08 18:33:08,573 autoreload 13039 131835643363776 Watching for file 
 WARNING 2024-05-08 18:33:23,259 log 13039 131835599050304 Not Found: /users/booking/booking.js
 WARNING 2024-05-08 18:38:33,917 log 13039 131835599050304 Not Found: /favicon.ico
 WARNING 2024-05-08 18:38:34,199 log 13039 131835346540096 Not Found: /favicon.ico
+INFO 2024-05-10 21:35:18,049 autoreload 42668 40412 Watching for file changes with StatReloader
+WARNING 2024-05-10 21:35:34,454 log 42668 36344 Bad Request: /users/booking/
+INFO 2024-05-10 21:37:04,460 autoreload 41016 47060 Watching for file changes with StatReloader
+WARNING 2024-05-10 21:37:09,315 log 41016 42084 Bad Request: /users/booking/
+WARNING 2024-05-10 21:37:13,628 log 41016 42084 Bad Request: /users/booking/
+WARNING 2024-05-10 21:37:26,532 log 41016 47620 Bad Request: /users/booking/
+INFO 2024-05-10 21:38:44,393 autoreload 41016 47060 C:\Users\jgabritchidze\Desktop\FitnessPro\FitnessPro\urls.py changed, reloading.
+INFO 2024-05-10 21:38:45,000 autoreload 19488 28804 Watching for file changes with StatReloader
+INFO 2024-05-10 21:38:48,492 autoreload 19488 28804 C:\Users\jgabritchidze\Desktop\FitnessPro\FitnessPro\urls.py changed, reloading.
+INFO 2024-05-10 21:38:49,133 autoreload 11068 42532 Watching for file changes with StatReloader
+WARNING 2024-05-10 21:38:52,699 log 11068 22948 Not Found: /users/booking/
+INFO 2024-05-10 21:39:42,255 autoreload 46752 23592 Watching for file changes with StatReloader
+WARNING 2024-05-10 21:39:45,265 log 46752 46124 Not Found: /users/booking/
+WARNING 2024-05-10 21:39:47,864 log 46752 46124 Not Found: /users/booking/
+WARNING 2024-05-10 21:39:47,960 log 46752 46124 Not Found: /favicon.ico
+WARNING 2024-05-10 21:42:12,985 log 46752 25304 Not Found: /users/booking/
+WARNING 2024-05-10 21:42:23,123 log 46752 35288 Not Found: /users/booking/
+WARNING 2024-05-10 21:42:32,279 log 46752 27108 Not Found: /users/booking/
+INFO 2024-05-10 21:44:17,963 autoreload 46752 23592 C:\Users\jgabritchidze\Desktop\FitnessPro\FitnessPro\urls.py changed, reloading.
+INFO 2024-05-10 21:44:18,629 autoreload 8880 38988 Watching for file changes with StatReloader
+INFO 2024-05-10 21:44:23,101 autoreload 8880 38988 C:\Users\jgabritchidze\Desktop\FitnessPro\booking\urls.py changed, reloading.
+INFO 2024-05-10 21:44:23,844 autoreload 8712 36696 Watching for file changes with StatReloader
+INFO 2024-05-10 21:44:26,276 autoreload 8712 36696 C:\Users\jgabritchidze\Desktop\FitnessPro\booking\views.py changed, reloading.
+INFO 2024-05-10 21:44:26,889 autoreload 42912 40372 Watching for file changes with StatReloader
+WARNING 2024-05-10 21:44:37,724 log 42912 25924 Not Found: /booking/
+WARNING 2024-05-10 21:44:51,656 log 42912 44028 Bad Request: /booking/booking/
+WARNING 2024-05-10 21:45:06,429 log 42912 45012 Not Found: /booking
+WARNING 2024-05-10 21:45:33,162 log 42912 22008 Bad Request: /booking/booking/
+INFO 2024-05-10 21:49:44,053 autoreload 42912 40372 C:\Users\jgabritchidze\Desktop\FitnessPro\booking\urls.py changed, reloading.
+INFO 2024-05-10 21:49:44,738 autoreload 39260 47112 Watching for file changes with StatReloader
+INFO 2024-05-10 21:50:10,162 autoreload 20560 38564 Watching for file changes with StatReloader
+WARNING 2024-05-10 21:52:59,198 log 20560 43292 Not Found: /favicon.ico
