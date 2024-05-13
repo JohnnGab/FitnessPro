@@ -2240,6 +2240,7 @@ WARNING 2024-05-10 19:18:56,442 log 15627 134714946045504 Not Found: /favicon.ic
 ERROR 2024-05-10 19:18:58,250 log 15627 134714946045504 Internal Server Error: /booking/fetch-schedules/
 INFO 2024-05-10 19:28:09,401 autoreload 15627 134714990399936 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
 INFO 2024-05-10 19:28:09,618 autoreload 15830 135550508163520 Watching for file changes with StatReloader
+<<<<<<< Updated upstream
 =======
 INFO 2024-05-10 21:59:13,947 autoreload 45540 42512 Watching for file changes with StatReloader
 >>>>>>> Stashed changes
@@ -2524,3 +2525,201 @@ INFO 2024-05-11 00:28:58,801 autoreload 31132 45016 Watching for file changes wi
 WARNING 2024-05-11 00:36:19,677 log 31132 46976 Not Found: /favicon.ico
 WARNING 2024-05-11 00:38:34,332 log 31132 40404 Not Found: /favicon.ico
 WARNING 2024-05-11 00:40:33,635 log 31132 19216 Not Found: /favicon.ico
+=======
+INFO 2024-05-10 20:13:15,581 autoreload 16501 129953455350208 Watching for file changes with StatReloader
+WARNING 2024-05-10 20:13:28,520 log 16501 129953411003968 Not Found: /favicon.ico
+ERROR 2024-05-10 20:13:43,621 log 16501 129953411003968 Internal Server Error: /booking/fetch-schedules/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/giorgi/Desktop/FitnessPro/booking/views.py", line 22, in get
+    schedules = ClassSchedule.objects.filter(weekday__day_name=day_name).annotate(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/query.py", line 1680, in _annotate
+    clone.query.add_annotation(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1198, in add_annotation
+    annotation = annotation.resolve_expression(self, allow_joins=True, reuse=None)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/aggregates.py", line 65, in resolve_expression
+    c = super().resolve_expression(query, allow_joins, reuse, summarize)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/expressions.py", line 975, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/expressions.py", line 854, in resolve_expression
+    return query.resolve_ref(self.name, allow_joins, reuse, summarize)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 2014, in resolve_ref
+    join_info = self.setup_joins(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1867, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'reservation_set' into field. Choices are: capacity, classes, classes_id, duration, id, reservation, time, weekday, weekday_id
+INFO 2024-05-10 20:24:22,460 autoreload 16501 129953455350208 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-10 20:24:22,670 autoreload 16813 136041306255808 Watching for file changes with StatReloader
+WARNING 2024-05-10 20:24:28,892 log 16813 136041261971008 Not Found: /favicon.ico
+ERROR 2024-05-10 20:24:32,343 log 16813 136041261971008 Internal Server Error: /booking/fetch-schedules/
+Traceback (most recent call last):
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/giorgi/Desktop/FitnessPro/booking/views.py", line 26, in get
+    schedules = ClassSchedule.objects.filter(reservations__date=selected_date).annotate(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/giorgi/.local/share/virtualenvs/FitnessPro-SGckQHIp/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'reservations' into field. Choices are: capacity, classes, classes_id, duration, id, reservation, time, weekday, weekday_id
+INFO 2024-05-10 20:27:40,582 autoreload 16813 136041306255808 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-10 20:27:40,787 autoreload 16897 136602140021184 Watching for file changes with StatReloader
+INFO 2024-05-10 20:30:29,255 autoreload 16897 136602140021184 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-10 20:30:29,449 autoreload 16961 128124139962816 Watching for file changes with StatReloader
+INFO 2024-05-10 20:31:52,275 autoreload 16961 128124139962816 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-10 20:31:52,476 autoreload 17013 139164918866368 Watching for file changes with StatReloader
+INFO 2024-05-10 20:48:08,503 autoreload 17013 139164918866368 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-10 20:48:08,697 autoreload 17187 138073354740160 Watching for file changes with StatReloader
+>>>>>>> Stashed changes
+INFO 2024-05-10 20:52:14,880 autoreload 17791 123651737874880 Watching for file changes with StatReloader
+WARNING 2024-05-10 20:52:27,108 log 17791 123651693577792 Not Found: /favicon.ico
+WARNING 2024-05-10 20:52:32,848 log 17791 123651666302528 Not Found: /favicon.ico
+INFO 2024-05-13 14:10:23,586 autoreload 5499 137955321885120 Watching for file changes with StatReloader
+WARNING 2024-05-13 14:10:39,394 log 5499 137955259786816 Not Found: /favicon.ico
+WARNING 2024-05-13 14:12:13,755 log 5499 137955259786816 Not Found: /favicon.ico
+WARNING 2024-05-13 14:12:13,954 log 5499 137955241952832 Not Found: /favicon.ico
+WARNING 2024-05-13 14:13:12,902 log 5499 137955259786816 Not Found: /favicon.ico
+WARNING 2024-05-13 14:13:40,039 log 5499 137955241952832 Not Found: /favicon.ico
+WARNING 2024-05-13 14:13:40,227 log 5499 137955268179520 Not Found: /favicon.ico
+WARNING 2024-05-13 14:15:08,838 log 5499 137955268179520 Not Found: /favicon.ico
+WARNING 2024-05-13 14:21:44,393 log 5499 137955250345536 Not Found: /favicon.ico
+WARNING 2024-05-13 14:21:44,554 log 5499 137955259786816 Not Found: /favicon.ico
+WARNING 2024-05-13 14:22:27,842 log 5499 137955259786816 Not Found: /favicon.ico
+WARNING 2024-05-13 14:23:13,154 log 5499 137955259786816 Not Found: /favicon.ico
+WARNING 2024-05-13 14:25:01,338 log 5499 137955233560128 Not Found: /favicon.ico
+WARNING 2024-05-13 14:25:01,503 log 5499 137955241952832 Not Found: /favicon.ico
+WARNING 2024-05-13 14:25:01,759 log 5499 137955233560128 Not Found: /favicon.ico
+WARNING 2024-05-13 14:30:33,121 log 5499 137954752198208 Not Found: /favicon.ico
+WARNING 2024-05-13 14:44:53,477 log 5499 137954752198208 Not Found: /favicon.ico
+WARNING 2024-05-13 14:44:56,274 log 5499 137954752198208 Not Found: /favicon.ico
+WARNING 2024-05-13 14:44:56,627 log 5499 137955268179520 Not Found: /favicon.ico
+WARNING 2024-05-13 15:03:30,992 log 5499 137954752198208 Not Found: /favicon.ico
+WARNING 2024-05-13 15:04:28,864 log 5499 137955277620800 Not Found: /favicon.ico
+WARNING 2024-05-13 15:04:29,019 log 5499 137955268179520 Not Found: /favicon.ico
+WARNING 2024-05-13 15:06:32,776 log 5499 137955268179520 Not Found: /favicon.ico
+WARNING 2024-05-13 15:07:23,051 log 5499 137955268179520 Not Found: /favicon.ico
+WARNING 2024-05-13 15:07:23,386 log 5499 137955241952832 Not Found: /favicon.ico
+WARNING 2024-05-13 15:07:59,479 log 5499 137955241952832 Not Found: /favicon.ico
+WARNING 2024-05-13 15:07:59,903 log 5499 137955250345536 Not Found: /favicon.ico
+WARNING 2024-05-13 15:24:18,882 log 5499 137955259786816 Not Found: /favicon.ico
+WARNING 2024-05-13 15:24:40,470 log 5499 137955259786816 Not Found: /favicon.ico
+WARNING 2024-05-13 15:38:40,712 log 5499 137955250345536 Not Found: /favicon.ico
+WARNING 2024-05-13 15:39:29,226 log 5499 137955233560128 Not Found: /favicon.ico
+WARNING 2024-05-13 15:39:29,430 log 5499 137955268179520 Not Found: /favicon.ico
+WARNING 2024-05-13 15:40:07,359 log 5499 137955241952832 Not Found: /favicon.ico
+WARNING 2024-05-13 15:44:31,408 log 5499 137955268179520 Not Found: /favicon.ico
+WARNING 2024-05-13 15:44:54,065 log 5499 137955250345536 Not Found: /favicon.ico
+WARNING 2024-05-13 15:46:48,853 log 5499 137955233560128 Not Found: /favicon.ico
+WARNING 2024-05-13 15:47:12,950 log 5499 137955241952832 Not Found: /favicon.ico
+WARNING 2024-05-13 15:47:13,248 log 5499 137955250345536 Not Found: /favicon.ico
+WARNING 2024-05-13 15:47:49,464 log 5499 137955268179520 Not Found: /favicon.ico
+WARNING 2024-05-13 15:48:19,847 log 5499 137955233560128 Not Found: /favicon.ico
+WARNING 2024-05-13 15:48:19,999 log 5499 137955259786816 Not Found: /favicon.ico
+WARNING 2024-05-13 15:48:45,912 log 5499 137955250345536 Not Found: /favicon.ico
+WARNING 2024-05-13 15:48:46,128 log 5499 137955241952832 Not Found: /favicon.ico
+WARNING 2024-05-13 15:51:52,282 log 5499 137955241952832 Not Found: /favicon.ico
+WARNING 2024-05-13 15:52:51,899 log 5499 137955250345536 Not Found: /favicon.ico
+WARNING 2024-05-13 15:54:12,275 log 5499 137955259786816 Not Found: /favicon.ico
+WARNING 2024-05-13 15:54:48,663 log 5499 137955241952832 Not Found: /favicon.ico
+WARNING 2024-05-13 15:54:48,839 log 5499 137955233560128 Not Found: /favicon.ico
+WARNING 2024-05-13 15:54:54,822 log 5499 137955259786816 Not Found: /favicon.ico
+WARNING 2024-05-13 15:54:55,008 log 5499 137955233560128 Not Found: /favicon.ico
+WARNING 2024-05-13 15:54:55,170 log 5499 137955233560128 Not Found: /favicon.ico
+WARNING 2024-05-13 15:55:00,200 log 5499 137955277620800 Not Found: /favicon.ico
+WARNING 2024-05-13 15:55:17,133 log 5499 137955233560128 Not Found: /favicon.ico
+WARNING 2024-05-13 15:55:17,705 log 5499 137955268179520 Not Found: /favicon.ico
+WARNING 2024-05-13 15:55:19,049 log 5499 137955250345536 Not Found: /favicon.ico
+WARNING 2024-05-13 15:55:19,279 log 5499 137955268179520 Not Found: /favicon.ico
+WARNING 2024-05-13 15:55:19,454 log 5499 137955241952832 Not Found: /favicon.ico
+WARNING 2024-05-13 15:55:19,667 log 5499 137955250345536 Not Found: /favicon.ico
+WARNING 2024-05-13 15:55:19,873 log 5499 137955233560128 Not Found: /favicon.ico
+WARNING 2024-05-13 15:55:20,596 log 5499 137955250345536 Not Found: /favicon.ico
+WARNING 2024-05-13 15:55:20,959 log 5499 137955250345536 Not Found: /favicon.ico
+WARNING 2024-05-13 15:55:21,310 log 5499 137955241952832 Not Found: /favicon.ico
+WARNING 2024-05-13 15:55:22,846 log 5499 137955277620800 Not Found: /favicon.ico
+WARNING 2024-05-13 15:55:23,215 log 5499 137955268179520 Not Found: /favicon.ico
+WARNING 2024-05-13 15:55:23,577 log 5499 137955259786816 Not Found: /favicon.ico
+WARNING 2024-05-13 15:55:23,806 log 5499 137955268179520 Not Found: /favicon.ico
+WARNING 2024-05-13 15:55:24,319 log 5499 137955250345536 Not Found: /favicon.ico
+WARNING 2024-05-13 15:55:24,506 log 5499 137955277620800 Not Found: /favicon.ico
+WARNING 2024-05-13 15:58:25,480 log 5499 137955268179520 Not Found: /favicon.ico
+WARNING 2024-05-13 15:58:25,694 log 5499 137955250345536 Not Found: /favicon.ico
+WARNING 2024-05-13 15:58:44,388 log 5499 137955241952832 Not Found: /favicon.ico
+WARNING 2024-05-13 15:58:44,555 log 5499 137955259786816 Not Found: /favicon.ico
+WARNING 2024-05-13 15:59:02,900 log 5499 137955259786816 Not Found: /favicon.ico
+WARNING 2024-05-13 16:02:07,049 log 5499 137955241952832 Not Found: /favicon.ico
+WARNING 2024-05-13 16:05:14,539 log 5499 137955277620800 Not Found: /favicon.ico
+WARNING 2024-05-13 16:05:14,916 log 5499 137955233560128 Not Found: /favicon.ico
+WARNING 2024-05-13 16:05:51,945 log 5499 137955250345536 Not Found: /favicon.ico
+WARNING 2024-05-13 16:08:33,554 log 5499 137955277620800 Not Found: /favicon.ico
+WARNING 2024-05-13 16:09:25,627 log 5499 137955268179520 Not Found: /favicon.ico
+WARNING 2024-05-13 16:09:25,944 log 5499 137955250345536 Not Found: /favicon.ico
+WARNING 2024-05-13 16:09:42,635 log 5499 137955233560128 Not Found: /favicon.ico
+WARNING 2024-05-13 16:09:42,846 log 5499 137955268179520 Not Found: /favicon.ico
+WARNING 2024-05-13 16:09:43,075 log 5499 137955259786816 Not Found: /favicon.ico
+WARNING 2024-05-13 16:10:32,868 log 5499 137955233560128 Not Found: /favicon.ico
+WARNING 2024-05-13 16:10:33,158 log 5499 137955268179520 Not Found: /favicon.ico
+WARNING 2024-05-13 16:12:59,449 log 5499 137955250345536 Not Found: /favicon.ico
+WARNING 2024-05-13 16:13:00,658 log 5499 137955277620800 Not Found: /favicon.ico
+WARNING 2024-05-13 17:02:08,532 log 5499 137955250345536 Not Found: /favicon.ico
+WARNING 2024-05-13 17:02:08,690 log 5499 137955241952832 Not Found: /favicon.ico
+WARNING 2024-05-13 17:05:03,332 log 5499 137955268179520 Not Found: /favicon.ico
+WARNING 2024-05-13 17:05:25,005 log 5499 137955241952832 Not Found: /favicon.ico
+WARNING 2024-05-13 17:05:31,390 log 5499 137955233560128 Not Found: /favicon.ico
+WARNING 2024-05-13 17:05:31,595 log 5499 137955268179520 Not Found: /favicon.ico
+INFO 2024-05-13 18:51:34,937 autoreload 11360 138102040334784 Watching for file changes with StatReloader
+WARNING 2024-05-13 18:55:13,357 log 11360 138101896758848 Not Found: /favicon.ico
+WARNING 2024-05-13 19:02:04,828 log 11360 138101879973440 Not Found: /favicon.ico
+WARNING 2024-05-13 19:02:05,024 log 11360 138101905151552 Not Found: /favicon.ico
+WARNING 2024-05-13 19:02:51,326 log 11360 138101888366144 Not Found: /favicon.ico
+WARNING 2024-05-13 19:04:19,568 log 11360 138101913544256 Not Found: /favicon.ico
+WARNING 2024-05-13 19:05:41,374 log 11360 138101921936960 Not Found: /favicon.ico
+WARNING 2024-05-13 19:06:29,177 log 11360 138101879973440 Not Found: /favicon.ico
+WARNING 2024-05-13 19:06:35,405 log 11360 138101879973440 Bad Request: /booking/fetch-schedules/
+WARNING 2024-05-13 19:07:08,413 log 11360 138101913544256 Not Found: /favicon.ico
+WARNING 2024-05-13 19:07:08,633 log 11360 138101905151552 Not Found: /favicon.ico
+WARNING 2024-05-13 19:17:42,319 log 11360 138101879973440 Not Found: /favicon.ico
+WARNING 2024-05-13 19:17:42,522 log 11360 138101896758848 Not Found: /favicon.ico
+WARNING 2024-05-13 19:17:42,827 log 11360 138101879973440 Not Found: /favicon.ico
+WARNING 2024-05-13 19:18:40,056 log 11360 138101905151552 Not Found: /favicon.ico
+WARNING 2024-05-13 19:27:59,718 log 11360 138101913544256 Not Found: /favicon.ico
+WARNING 2024-05-13 19:36:22,433 log 11360 138101879973440 Not Found: /favicon.ico
+WARNING 2024-05-13 19:36:22,666 log 11360 138101913544256 Not Found: /favicon.ico
+WARNING 2024-05-13 19:46:17,381 log 11360 138101879973440 Not Found: /favicon.ico
+WARNING 2024-05-13 19:46:17,595 log 11360 138101913544256 Not Found: /favicon.ico
+WARNING 2024-05-13 19:46:39,353 log 11360 138101905151552 Not Found: /favicon.ico
+WARNING 2024-05-13 19:46:39,611 log 11360 138101921936960 Not Found: /favicon.ico
+WARNING 2024-05-13 19:47:54,769 log 11360 138101879973440 Not Found: /favicon.ico
+WARNING 2024-05-13 19:48:25,150 log 11360 138101896758848 Not Found: /favicon.ico
+WARNING 2024-05-13 19:54:04,683 log 11360 138101888366144 Not Found: /favicon.ico

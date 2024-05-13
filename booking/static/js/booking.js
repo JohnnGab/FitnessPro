@@ -53,11 +53,13 @@ function showCalendar(month, year) {
 function selectDate(cell) {
   document.querySelector(".selected").classList.remove("selected");
   cell.classList.add("selected");
+  console.log(cell)
 
   const selectedDate = new Date(currentYear, currentMonth, parseInt(cell.textContent));
   console.log(selectedDate);
-  const formattedDate = selectedDate.toISOString().split('T')[0]; // Format date as YYYY-MM-DD
-  console.log(typeof formattedDate);
+  
+  const formattedDate = `${selectedDate.getFullYear()}-${(selectedDate.getMonth() + 1).toString().padStart(2, '0')}-${selectedDate.getDate().toString().padStart(2, '0')}`;
+  console.log(formattedDate)
 
   // Make AJAX request to fetch exercises for the selected date
   const urlWithParams = fetchSchedulesUrl + '?date=' + encodeURIComponent(formattedDate);
@@ -77,7 +79,8 @@ function displayExercises(exercises) {
 
   exercises.forEach(exercise => {
     const listItem = document.createElement('li');
-    listItem.textContent = exercise.name; // Assuming each exercise object has a 'name' property
+    listItem.textContent = exercise.classes__class_name; // Assuming each exercise object has a 'name' property
+    console.log(exercise)
     exerciseList.appendChild(listItem);
   });
 }

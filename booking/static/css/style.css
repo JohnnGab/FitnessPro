@@ -1,16 +1,11 @@
 .booking-page main {
-    margin: 6rem 0 10.1rem;
-    padding: 0 9rem;
-  }
-
-body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+    /* height: 100vh; */
+    padding: 0 10rem;
+  }
 
 #calendar-container {
     width: 300px;
@@ -52,5 +47,22 @@ body {
 
 .selected {
     background-color: #007BFF;
+    color: white;
+}
+
+/*  */
+
+.list-container {
+    width: 300px;
+    background-color: #007BFF;
+}
+
+#exercise-list {
+    text-align: center;
+    width: 100%;
+}
+
+#exercise-list li {
+    padding: 7px;
     color: white;
 }
