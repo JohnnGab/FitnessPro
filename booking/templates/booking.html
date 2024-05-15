@@ -34,9 +34,10 @@ booking-page
     <ul id="exercise-list"></ul>
 </div>
 
-<script src="{% static 'js/booking.js' %}"></script>
+
 <script type="text/javascript">
     const fetchSchedulesUrl = "{% url 'fetch_schedules' %}";
     const bookClassUrl = "{% url 'book_class' %}";
 </script>
+<script src="{% static 'js/booking.js' %}"></script>
 {% endblock %}

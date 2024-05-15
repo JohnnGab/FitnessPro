@@ -29,6 +29,8 @@ function showCalendar(month, year) {
   monthAndYear.textContent = `${months[month]} ${year}`;
 
   let date = 1;
+  let currentDayCell = null; // Variable to hold the cell of the current day
+
   for (let i = 0; i < 6; i++) {
     let row = document.createElement("tr");
     for (let j = 0; j < 7; j++) {
@@ -41,6 +43,7 @@ function showCalendar(month, year) {
         cell.textContent = date;
         if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
           cell.classList.add("selected");
+          currentDayCell = cell; // Store reference to the cell of the current day
         }
         cell.addEventListener("click", () => selectDate(cell));
         date++;
@@ -48,18 +51,21 @@ function showCalendar(month, year) {
     }
     calendar.appendChild(row);
   }
+
+  // Automatically select the current day if it's visible in the current month view
+  if (currentDayCell) {
+    selectDate(currentDayCell);
+  }
 }
 
 function selectDate(cell) {
-  document.querySelector(".selected").classList.remove("selected");
+  if (document.querySelector(".selected")) {
+    document.querySelector(".selected").classList.remove("selected");
+  }
   cell.classList.add("selected");
-  console.log(cell)
 
   const selectedDate = new Date(currentYear, currentMonth, parseInt(cell.textContent));
-  console.log(selectedDate);
-  
   const formattedDate = `${selectedDate.getFullYear()}-${(selectedDate.getMonth() + 1).toString().padStart(2, '0')}-${selectedDate.getDate().toString().padStart(2, '0')}`;
-  console.log(formattedDate)
 
   // Make AJAX request to fetch exercises for the selected date
   const urlWithParams = fetchSchedulesUrl + '?date=' + encodeURIComponent(formattedDate);
@@ -67,22 +73,58 @@ function selectDate(cell) {
   fetch(urlWithParams)
     .then(response => response.json())
     .then(data => {
-      console.log(data);
+      console.log(data)
       displayExercises(data);
     })
     .catch(error => console.error('Error fetching exercises:', error));
 }
+
 function displayExercises(exercises) {
-  // Assuming exercises is an array of exercise objects
   const exerciseList = document.getElementById('exercise-list');
   exerciseList.innerHTML = ''; // Clear previous exercises
 
-  exercises.forEach(exercise => {
-    const listItem = document.createElement('li');
-    listItem.textContent = exercise.classes__class_name; // Assuming each exercise object has a 'name' property
-    console.log(exercise)
+  // Helper function to create and append the appropriate button
+  function createButton(exercise, listItem) {
+    if (exercise.available === 0) {
+      listItem.classList.add('full');
+      const waitlistButton = document.createElement('button');
+      waitlistButton.textContent = 'Join waitlist';
+      waitlistButton.className = 'waitlist-button';
+      listItem.appendChild(waitlistButton);
+    } else {
+      const bookButton = document.createElement('button');
+      bookButton.textContent = 'Book';
+      bookButton.className = 'book-button';
+      listItem.appendChild(bookButton);
+    }
+  }
+
+  for (let i = 0; i < exercises.length; i++) {
+    const exercise = exercises[i];
+
+    const listItem = document.createElement('div');
+    listItem.className = 'exercise-item';
+
+    const className = document.createElement('div');
+    className.className = 'class-name';
+    className.textContent = exercise.classes__class_name;
+    listItem.appendChild(className);
+
+    const time = document.createElement('div');
+    time.className = 'class-time';
+    time.textContent = new Date('1970-01-01T' + exercise.time + 'Z').toLocaleTimeString('en-US', { timeZone: 'UTC', hour: '2-digit', minute: '2-digit' });
+    listItem.appendChild(time);
+
+    const availability = document.createElement('div');
+    availability.className = 'class-availability';
+    availability.textContent = `${exercise.available}/${exercise.capacity} available`;
+    listItem.appendChild(availability);
+
+    // Call the helper function to create and append the button
+    createButton(exercise, listItem);
+
     exerciseList.appendChild(listItem);
-  });
+  }
 }
 
 
