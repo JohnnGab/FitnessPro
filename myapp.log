@@ -2765,3 +2765,92 @@ WARNING 2024-05-15 19:40:29,377 log 15294 129539627804224 Not Found: /favicon.ic
 WARNING 2024-05-15 19:40:29,858 log 15294 129539611018816 Not Found: /favicon.ico
 WARNING 2024-05-15 19:41:06,226 log 15294 129539861689920 Not Found: /favicon.ico
 WARNING 2024-05-15 19:41:06,400 log 15294 129539636196928 Not Found: /favicon.ico
+INFO 2024-05-15 20:05:26,810 autoreload 16497 136879570919872 Watching for file changes with StatReloader
+WARNING 2024-05-15 20:05:38,651 log 16497 136879526557248 Not Found: /favicon.ico
+WARNING 2024-05-15 20:07:05,717 log 16497 136879526557248 Not Found: /favicon.ico
+WARNING 2024-05-15 20:07:06,003 log 16497 136879490889280 Not Found: /favicon.ico
+INFO 2024-05-16 15:14:48,139 autoreload 7971 124821187338688 Watching for file changes with StatReloader
+WARNING 2024-05-16 15:15:06,332 log 7971 124821067261504 Not Found: /favicon.ico
+WARNING 2024-05-16 15:15:22,657 log 7971 124821067261504 Not Found: /favicon.ico
+WARNING 2024-05-16 15:23:32,127 log 7971 124821056771648 Not Found: /favicon.ico
+WARNING 2024-05-16 15:23:32,352 log 7971 124821031593536 Not Found: /favicon.ico
+WARNING 2024-05-16 15:23:34,069 log 7971 124821056771648 Not Found: /favicon.ico
+WARNING 2024-05-16 15:24:32,168 log 7971 124821048378944 Not Found: /favicon.ico
+WARNING 2024-05-16 15:24:32,355 log 7971 124821056771648 Not Found: /favicon.ico
+WARNING 2024-05-16 15:24:58,693 log 7971 124821075654208 Not Found: /favicon.ico
+WARNING 2024-05-16 15:24:58,944 log 7971 124821075654208 Not Found: /favicon.ico
+WARNING 2024-05-16 15:27:59,872 log 7971 124821039986240 Not Found: /favicon.ico
+WARNING 2024-05-16 15:28:00,056 log 7971 124821056771648 Not Found: /favicon.ico
+WARNING 2024-05-16 15:28:10,473 log 7971 124821067261504 Not Found: /favicon.ico
+WARNING 2024-05-16 15:28:10,662 log 7971 124821031593536 Not Found: /favicon.ico
+WARNING 2024-05-16 15:28:10,910 log 7971 124821067261504 Not Found: /favicon.ico
+WARNING 2024-05-16 15:30:21,152 log 7971 124821075654208 Not Found: /favicon.ico
+WARNING 2024-05-16 15:30:21,345 log 7971 124821067261504 Not Found: /favicon.ico
+WARNING 2024-05-16 15:36:06,475 log 7971 124821048378944 Not Found: /favicon.ico
+WARNING 2024-05-16 15:36:30,015 log 7971 124821048378944 Not Found: /favicon.ico
+WARNING 2024-05-16 15:39:36,292 log 7971 124821056771648 Not Found: /favicon.ico
+WARNING 2024-05-16 16:14:50,485 log 7971 124821067261504 Not Found: /favicon.ico
+WARNING 2024-05-16 16:17:30,773 log 7971 124821067261504 Not Found: /favicon.ico
+WARNING 2024-05-16 16:24:11,956 log 7971 124821067261504 Not Found: /favicon.ico
+WARNING 2024-05-16 16:43:45,154 log 7971 124821075654208 Not Found: /favicon.ico
+WARNING 2024-05-16 16:43:45,693 log 7971 124821075654208 Not Found: /favicon.ico
+WARNING 2024-05-16 16:43:46,026 log 7971 124821031593536 Not Found: /favicon.ico
+WARNING 2024-05-16 16:47:06,795 log 7971 124821075654208 Not Found: /favicon.ico
+WARNING 2024-05-16 16:47:14,841 log 7971 124821075654208 Not Found: /login/
+WARNING 2024-05-16 17:55:59,586 log 7971 124821056771648 Not Found: /favicon.ico
+WARNING 2024-05-16 17:57:47,299 log 7971 124821067261504 Not Found: /favicon.ico
+WARNING 2024-05-16 17:57:48,086 log 7971 124821039986240 Not Found: /favicon.ico
+WARNING 2024-05-16 17:57:48,367 log 7971 124821031593536 Not Found: /favicon.ico
+WARNING 2024-05-16 17:59:43,298 log 7971 124821031593536 Not Found: /login/
+WARNING 2024-05-16 18:36:02,585 log 7971 124821031593536 Not Found: /favicon.ico
+WARNING 2024-05-16 18:36:10,455 log 7971 124821031593536 Not Found: /login/
+WARNING 2024-05-16 18:39:59,905 log 7971 124821048378944 Not Found: /favicon.ico
+WARNING 2024-05-16 18:51:17,705 log 7971 124821056771648 Not Found: /login/
+WARNING 2024-05-16 18:51:43,704 log 7971 124821031593536 Not Found: /favicon.ico
+WARNING 2024-05-16 19:10:58,537 log 7971 124821067261504 Not Found: /favicon.ico
+WARNING 2024-05-16 19:10:58,739 log 7971 124821031593536 Not Found: /favicon.ico
+WARNING 2024-05-16 19:12:38,287 log 7971 124821031593536 Not Found: /favicon.ico
+WARNING 2024-05-16 19:12:38,454 log 7971 124821048378944 Not Found: /favicon.ico
+WARNING 2024-05-16 19:20:02,486 log 7971 124821075654208 Not Found: /favicon.ico
+WARNING 2024-05-16 19:22:38,886 log 7971 124821075654208 Not Found: /favicon.ico
+WARNING 2024-05-16 19:22:39,341 log 7971 124821048378944 Not Found: /favicon.ico
+WARNING 2024-05-16 19:22:45,509 log 7971 124821048378944 Not Found: /login/
+INFO 2024-05-16 20:09:42,648 autoreload 7971 124821187338688 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-16 20:09:42,985 autoreload 15216 139069630489024 Watching for file changes with StatReloader
+INFO 2024-05-16 20:15:35,946 autoreload 15216 139069630489024 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-16 20:15:36,188 autoreload 15320 127398955975104 Watching for file changes with StatReloader
+INFO 2024-05-16 20:16:05,435 autoreload 15320 127398955975104 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-16 20:16:05,669 autoreload 15371 137066137043392 Watching for file changes with StatReloader
+INFO 2024-05-16 20:17:25,264 autoreload 15371 137066137043392 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-16 20:17:25,504 autoreload 15427 137855451570624 Watching for file changes with StatReloader
+INFO 2024-05-16 20:19:07,121 autoreload 15427 137855451570624 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-16 20:19:07,338 autoreload 15503 137474150896064 Watching for file changes with StatReloader
+INFO 2024-05-16 20:19:40,667 autoreload 15503 137474150896064 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-16 20:19:40,895 autoreload 15566 134735799599552 Watching for file changes with StatReloader
+INFO 2024-05-16 20:19:44,032 autoreload 15566 134735799599552 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-16 20:19:44,283 autoreload 15589 130146940436928 Watching for file changes with StatReloader
+INFO 2024-05-16 20:20:01,804 autoreload 15650 130013474644416 Watching for file changes with StatReloader
+INFO 2024-05-16 20:20:43,330 autoreload 15779 135265371214272 Watching for file changes with StatReloader
+WARNING 2024-05-16 20:21:05,046 log 15779 135265326941760 Not Found: /login/
+INFO 2024-05-16 20:24:20,464 autoreload 15779 135265371214272 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-16 20:24:20,716 autoreload 16013 139367759094208 Watching for file changes with StatReloader
+INFO 2024-05-16 20:24:29,909 autoreload 16013 139367759094208 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-16 20:24:30,141 autoreload 16063 138500757901760 Watching for file changes with StatReloader
+WARNING 2024-05-16 20:24:35,375 log 16063 138500713580096 Not Found: /signin/
+WARNING 2024-05-16 20:27:54,919 log 16063 138500713580096 Bad Request: /users/signin/
+ERROR 2024-05-16 20:32:43,112 log 16063 138500713580096 Internal Server Error: /booking/book-class/
+WARNING 2024-05-16 20:35:40,575 log 16063 138500713580096 Not Found: /signin/
+INFO 2024-05-16 20:46:21,456 autoreload 16063 138500757901760 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-16 20:46:21,708 autoreload 16710 126263077466560 Watching for file changes with StatReloader
+INFO 2024-05-16 20:46:58,014 autoreload 16710 126263077466560 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-16 20:46:58,259 autoreload 16765 130469366575552 Watching for file changes with StatReloader
+WARNING 2024-05-16 20:47:25,933 log 16765 130469322229312 Not Found: /favicon.ico
+INFO 2024-05-16 21:01:54,926 autoreload 16765 130469366575552 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-16 21:01:55,153 autoreload 17200 128227320037824 Watching for file changes with StatReloader
+INFO 2024-05-16 21:02:29,527 autoreload 17200 128227320037824 /home/giorgi/Desktop/FitnessPro/booking/views.py changed, reloading.
+INFO 2024-05-16 21:02:29,753 autoreload 17254 132287620878784 Watching for file changes with StatReloader
+WARNING 2024-05-16 21:02:49,408 log 17254 132287576491584 Not Found: /favicon.ico
+WARNING 2024-05-16 21:02:53,391 log 17254 132287341524544 Not Found: /accounts/login/
+WARNING 2024-05-16 21:11:21,498 log 17254 132287341524544 Not Found: /favicon.ico
+WARNING 2024-05-16 21:11:21,775 log 17254 132287324739136 Not Found: /favicon.ico
+WARNING 2024-05-16 21:13:44,799 log 17254 132287558657600 Not Found: /accounts/login/

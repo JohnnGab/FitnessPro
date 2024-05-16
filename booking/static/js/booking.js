@@ -73,7 +73,7 @@ function selectDate(cell) {
   fetch(urlWithParams)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      console.log(data);
       displayExercises(data);
     })
     .catch(error => console.error('Error fetching exercises:', error));
@@ -96,8 +96,62 @@ function displayExercises(exercises) {
       bookButton.textContent = 'Book';
       bookButton.className = 'book-button';
       listItem.appendChild(bookButton);
+      bookButton.dataset.scheduleId = exercise.id;
+      bookButton.addEventListener('click', () => bookClass(bookButton.dataset.scheduleId))
     }
   }
+
+  function bookClass(scheduleId) {
+    const selectedCell = document.querySelector(".selected");
+    const selectedDate = new Date(currentYear, currentMonth, parseInt(selectedCell.textContent));
+    const formattedDate = `${selectedDate.getFullYear()}-${(selectedDate.getMonth() + 1).toString().padStart(2, '0')}-${selectedDate.getDate().toString().padStart(2, '0')}`;
+  
+    // Prepare form data
+    // Prepare JSON data
+    const data = {
+      schedule_id: scheduleId,
+      date: formattedDate
+  };
+
+  fetch(bookClassUrl, {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+          'Content-Type': 'application/json',
+          'X-CSRFToken': getCookie('csrftoken') // Make sure to include the CSRF token
+      }
+  })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      if (data.status === 'success') {
+        alert('Class booked successfully!');
+        // Optionally, update the UI to reflect the booking
+        selectDate(selectedCell);
+      } else {
+        alert(data.message || 'Failed to book the class.');
+      }
+    })
+    .catch(error => console.error('Error booking class:', error));
+  }
+  
+  // Function to get CSRF token
+  function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+      const cookies = document.cookie.split(';');
+      for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim();
+        if (cookie.substring(0, name.length + 1) === (name + '=')) {
+          cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+          break;
+        }
+      }
+    }
+    return cookieValue;
+  }
+  
+  
 
   for (let i = 0; i < exercises.length; i++) {
     const exercise = exercises[i];
@@ -114,6 +168,11 @@ function displayExercises(exercises) {
     time.className = 'class-time';
     time.textContent = new Date('1970-01-01T' + exercise.time + 'Z').toLocaleTimeString('en-US', { timeZone: 'UTC', hour: '2-digit', minute: '2-digit' });
     listItem.appendChild(time);
+
+    const duration = document.createElement('div');
+    duration.className = 'duration';
+    duration.textContent = exercise.duration;
+    listItem.appendChild(duration);
 
     const availability = document.createElement('div');
     availability.className = 'class-availability';

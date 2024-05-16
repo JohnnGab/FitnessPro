@@ -7,7 +7,7 @@
     padding: 0 10rem;
   }
 
-#calendar-container {
+#calendar-container, #exercise-list {
     width: 300px;
     border: 1px solid #ccc;
 }
@@ -52,17 +52,46 @@
 
 /*  */
 
-.list-container {
-    width: 300px;
-    background-color: #007BFF;
-}
-
 #exercise-list {
-    text-align: center;
-    width: 100%;
+    background-color: #f9f9f9;
 }
 
-#exercise-list li {
-    padding: 7px;
+.exercise-item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.exercise-item .class-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.exercise-item .class-time,
+.exercise-item .duration,
+.exercise-item .class-availability {
+    margin-bottom: 5px;
+}
+
+.exercise-item .book-button,
+.exercise-item .waitlist-button {
+    background-color: #007BFF;
     color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.exercise-item .waitlist-button {
+    background-color: #FFA500;
+}
+
+.exercise-item.full .class-availability {
+    color: red;
+}
+
+.exercise-item .book-button:hover,
+.exercise-item .waitlist-button:hover {
+    opacity: 0.8;
 }

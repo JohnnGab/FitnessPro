@@ -1,3 +1,4 @@
+import json
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.views import View
@@ -9,6 +10,7 @@ from django.db import transaction
 from django.core.exceptions import ObjectDoesNotExist, ValidationError
 from django.views.generic import TemplateView
 from .forms import BookClassForm
+#from django.urls import reverse_lazy
 
 class BookingView(TemplateView):
     template_name = 'booking.html'
@@ -57,22 +59,26 @@ class FetchClassSchedules(View):
         return JsonResponse({'error': message}, status=status)
 
 class BookClass(LoginRequiredMixin, View):
-    login_url = '/login/'
+    #login_url = reverse_lazy('signin')
 
     def post(self, request, *args, **kwargs):
-        form = BookClassForm(request.POST)
-        if form.is_valid():
-            try:
-                user = request.user
-                schedule_id = form.cleaned_data['schedule_id']
-                date = form.cleaned_data['date']
-                return self.book_class(user, schedule_id, date)
-            except ValidationError as e:
-                return self.error_response(str(e), status=400)
-            except Exception as e:
-                return self.error_response(str(e), status=500)
-        else:
-            return self.error_response(form.errors.as_json(), status=400)
+        try:
+            data = json.loads(request.body)  # Parse JSON data from request body
+            form = BookClassForm(data)
+            if form.is_valid():
+                try:
+                    user = request.user
+                    schedule_id = form.cleaned_data['schedule_id']
+                    date = form.cleaned_data['date']
+                    return self.book_class(user, schedule_id, date)
+                except ValidationError as e:
+                    return self.error_response(str(e), status=400)
+                except Exception as e:
+                    return self.error_response(str(e), status=500)
+            else:
+                return self.error_response(form.errors.as_json(), status=400)
+        except json.JSONDecodeError:
+            return self.error_response("Invalid JSON data", status=400)
 
     def book_class(self, user, schedule_id, date):
         try:
