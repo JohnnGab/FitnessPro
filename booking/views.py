@@ -10,7 +10,7 @@ from django.db import transaction
 from django.core.exceptions import ObjectDoesNotExist, ValidationError
 from django.views.generic import TemplateView
 from .forms import BookClassForm
-#from django.urls import reverse_lazy
+from django.urls import reverse_lazy
 
 class BookingView(TemplateView):
     template_name = 'booking.html'
@@ -59,18 +59,23 @@ class FetchClassSchedules(View):
         return JsonResponse({'error': message}, status=status)
 
 class BookClass(LoginRequiredMixin, View):
-    #login_url = reverse_lazy('signin')
+    login_url = reverse_lazy('signin')
+
+    def dispatch(self, request, *args, **kwargs):
+        if not request.user.is_authenticated:
+            if request.is_ajax():
+                return JsonResponse({'error': 'Authentication required', 'redirect_url': str(self.login_url)}, status=401)
+            else:
+                return self.handle_no_permission()
+        return super().dispatch(request, *args, **kwargs)
 
     def post(self, request, *args, **kwargs):
         try:
-            data = json.loads(request.body)  # Parse JSON data from request body
+            data = json.loads(request.body)
             form = BookClassForm(data)
             if form.is_valid():
                 try:
-                    user = request.user
-                    schedule_id = form.cleaned_data['schedule_id']
-                    date = form.cleaned_data['date']
-                    return self.book_class(user, schedule_id, date)
+                    return self.book_class(request.user, form)
                 except ValidationError as e:
                     return self.error_response(str(e), status=400)
                 except Exception as e:
@@ -80,15 +85,18 @@ class BookClass(LoginRequiredMixin, View):
         except json.JSONDecodeError:
             return self.error_response("Invalid JSON data", status=400)
 
-    def book_class(self, user, schedule_id, date):
+    def book_class(self, user, form):
         try:
             with transaction.atomic():
-                schedule = ClassSchedule.objects.select_for_update().get(id=schedule_id)
+                schedule = ClassSchedule.objects.select_for_update().get(id=form.cleaned_data['class_schedule'].id)
+                date = form.cleaned_data['date']
                 reservation_count = Reservation.objects.filter(class_schedule=schedule, date=date).count()
                 if reservation_count < schedule.capacity:
-                    Reservation.objects.create(user=user, class_schedule=schedule, date=date)
+                    reservation = form.save(commit=False)
+                    reservation.user = user
+                    reservation.save()
                     available_spots = schedule.capacity - reservation_count - 1
-                    return JsonResponse({'status': 'success', 'available_spots': available_spots})
+                    return JsonResponse({'status': 'success', 'reservation_id': reservation.id, 'available_spots': available_spots})
                 else:
                     return JsonResponse({'status': 'error', 'message': 'Class is fully booked'})
         except ObjectDoesNotExist:

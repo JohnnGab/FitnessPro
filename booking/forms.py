@@ -1,10 +1,12 @@
 from datetime import datetime
 from django import forms
 from django.core.exceptions import ValidationError
+from .models import Reservation
 
-class BookClassForm(forms.Form):
-    schedule_id = forms.IntegerField()
-    date = forms.DateField(input_formats=['%Y-%m-%d'])
+class BookClassForm(forms.ModelForm):
+    class Meta:
+        model = Reservation
+        fields = ['class_schedule', 'date']
 
     def clean_date(self):
         date = self.cleaned_data.get('date')

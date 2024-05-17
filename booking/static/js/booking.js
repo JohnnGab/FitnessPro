@@ -109,7 +109,7 @@ function displayExercises(exercises) {
     // Prepare form data
     // Prepare JSON data
     const data = {
-      schedule_id: scheduleId,
+      class_schedule: scheduleId,
       date: formattedDate
   };
 
