@@ -63,7 +63,7 @@ class BookClass(LoginRequiredMixin, View):
 
     def dispatch(self, request, *args, **kwargs):
         if not request.user.is_authenticated:
-            if request.is_ajax():
+            if request.headers.get('x-requested-with') == 'XMLHttpRequest':
                 return JsonResponse({'error': 'Authentication required', 'redirect_url': str(self.login_url)}, status=401)
             else:
                 return self.handle_no_permission()
