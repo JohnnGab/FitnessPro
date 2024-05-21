@@ -7,7 +7,7 @@ from .models import ClassSchedule, Reservation
 from datetime import datetime
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db import transaction
-from django.core.exceptions import ObjectDoesNotExist, ValidationError
+from django.core.exceptions import ObjectDoesNotExist, ValidationError, PermissionDenied
 from django.views.generic import TemplateView
 from .forms import BookClassForm
 from django.urls import reverse_lazy
@@ -61,14 +61,6 @@ class FetchClassSchedules(View):
 class BookClass(LoginRequiredMixin, View):
     login_url = reverse_lazy('signin')
 
-    def dispatch(self, request, *args, **kwargs):
-        if not request.user.is_authenticated:
-            if request.headers.get('x-requested-with') == 'XMLHttpRequest':
-                return JsonResponse({'error': 'Authentication required', 'redirect_url': str(self.login_url)}, status=401)
-            else:
-                return self.handle_no_permission()
-        return super().dispatch(request, *args, **kwargs)
-
     def post(self, request, *args, **kwargs):
         try:
             data = json.loads(request.body)
@@ -101,6 +93,28 @@ class BookClass(LoginRequiredMixin, View):
                     return JsonResponse({'status': 'error', 'message': 'Class is fully booked'})
         except ObjectDoesNotExist:
             raise ValidationError('Schedule not found')
+
+    def error_response(self, message, status=400):
+        return JsonResponse({'error': message}, status=status)
+
+class DeleteReservation(LoginRequiredMixin, View):
+    login_url = reverse_lazy('signin')
+
+    def delete(self, request, *args, **kwargs):
+        try:
+            reservation_id = request.GET.get('reservation_id')
+            if not reservation_id:
+                return self.error_response('Reservation ID is required', status=400)
+
+            reservation = Reservation.objects.get(id=reservation_id, user=request.user)
+            reservation.delete()
+            return JsonResponse({'status': 'success'}, status=200)
+        except ObjectDoesNotExist:
+            return self.error_response('Reservation not found', status=404)
+        except PermissionDenied:
+            return self.error_response('Permission denied', status=403)
+        except Exception as e:
+            return self.error_response(str(e), status=500)
 
     def error_response(self, message, status=400):
         return JsonResponse({'error': message}, status=status)

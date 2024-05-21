@@ -163,3 +163,4 @@ LOGGING = {
     },
 }
 
+CSRF_USE_SESSIONS = True
