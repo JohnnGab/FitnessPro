@@ -60,7 +60,6 @@ class FetchClassSchedules(View):
 
 class BookClass(LoginRequiredMixin, View):
     login_url = reverse_lazy('signin')
-
     def post(self, request, *args, **kwargs):
         try:
             data = json.loads(request.body)
