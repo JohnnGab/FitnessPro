@@ -1,5 +1,5 @@
 import json
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from django.views import View
 from django.db.models import Count, F, Q
@@ -10,10 +10,15 @@ from django.db import transaction
 from django.core.exceptions import ObjectDoesNotExist, ValidationError, PermissionDenied
 from django.views.generic import TemplateView
 from .forms import BookClassForm
-from django.urls import reverse_lazy
+from django.urls import reverse_lazy, reverse
 
 class BookingView(TemplateView):
     template_name = 'booking.html'
+
+    def dispatch(self, request, *args, **kwargs):
+        if not request.user.is_authenticated:
+            return redirect('/users/signin/')
+        return super().dispatch(request, *args, **kwargs)
 
 class FetchClassSchedules(View):
     
@@ -43,16 +48,17 @@ class FetchClassSchedules(View):
         
         schedule_list = []
         for schedule in schedules:
+            reservation = Reservation.objects.filter(class_schedule=schedule, date=selected_date, user=self.request.user).first()
             schedule_dict = {
             'id': schedule.id,
             'classes__class_name': schedule.classes.class_name,
             'time': schedule.time.strftime('%H:%M:%S'),
             'duration': schedule.get_duration_display(),
             'available': schedule.available,
-            'capacity': schedule.capacity
+            'capacity': schedule.capacity,
+            'reservation_id': reservation.id if reservation else None
         }
             schedule_list.append(schedule_dict)
-    
         return schedule_list
 
     def error_response(self, message, status=400):
@@ -101,7 +107,7 @@ class DeleteReservation(LoginRequiredMixin, View):
 
     def delete(self, request, *args, **kwargs):
         try:
-            reservation_id = request.GET.get('reservation_id')
+            reservation_id = request.GET.get('id')
             if not reservation_id:
                 return self.error_response('Reservation ID is required', status=400)
 
