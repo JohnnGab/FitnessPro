@@ -12,7 +12,7 @@ from django.views.generic import TemplateView, ListView
 from .forms import BookClassForm
 from django.urls import reverse_lazy, reverse
 
-class BookingView(TemplateView):
+class BookingPageView(TemplateView):
     template_name = 'booking.html'
 
     def dispatch(self, request, *args, **kwargs):
@@ -124,10 +124,9 @@ class DeleteReservation(LoginRequiredMixin, View):
     def error_response(self, message, status=400):
         return JsonResponse({'error': message}, status=status)
 
-class BookingPageView(LoginRequiredMixin, TemplateView):
+class MyBookingPageView(LoginRequiredMixin, TemplateView):
     template_name = 'mybookings.html'
     login_url = reverse_lazy('signin')
-
 
 class UserReservationsView(ListView):
     model = Reservation
