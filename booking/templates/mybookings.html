@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block body_class%}
+mybookings-page
+{% endblock %}
+
+{% block content %}
+
+<div>dsvvasv</div>
+
+
+<script type="text/javascript">
+    const userReservationsUrl = "{% url 'user_reservations' %}";
+    const deleteReservationUrl = "{% url 'delete_reservation' %}";
+</script>
+<script src="{% static 'js/mybookings.js' %}"></script>
+{% endblock %}
