@@ -8,7 +8,7 @@ from datetime import datetime
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db import transaction
 from django.core.exceptions import ObjectDoesNotExist, ValidationError, PermissionDenied
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView 
 from .forms import BookClassForm
 from django.urls import reverse_lazy, reverse
 
@@ -123,3 +123,27 @@ class DeleteReservation(LoginRequiredMixin, View):
 
     def error_response(self, message, status=400):
         return JsonResponse({'error': message}, status=status)
+
+class BookingPageView(LoginRequiredMixin, TemplateView):
+    template_name = 'mybookings.html'
+    login_url = reverse_lazy('signin')
+
+
+class UserReservationsView(ListView):
+    model = Reservation
+
+    def get_queryset(self):
+        return Reservation.objects.filter(user=self.request.user).select_related('class_schedule', 'class_schedule__classes')
+
+    def render_to_response(self, context, **response_kwargs):
+        reservations = context['object_list']
+        data = []
+        for reservation in reservations:
+            data.append({
+                'reservation_id': reservation.id,
+                'date': reservation.date,
+                'class_name': reservation.class_schedule.classes.name,
+                'time': reservation.class_schedule.time.strftime('%H:%M'),
+                'duration': reservation.class_schedule.get_duration_display(),
+            })
+        return JsonResponse(data, safe=False, **response_kwargs)
