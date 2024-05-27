@@ -1,15 +1,11 @@
-.vscode/
-myapp.log
-
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Django stuff:
-*.log
-*.pot
-*.pyc
-*.pyo
-*.db
-*.sqlite3
+/nbproject/
+/.idea/*
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+node_modules/
+bin/
+obj/
+.vs/
