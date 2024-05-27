@@ -141,7 +141,7 @@ class UserReservationsView(ListView):
             data.append({
                 'reservation_id': reservation.id,
                 'date': reservation.date,
-                'class_name': reservation.class_schedule.classes.name,
+                'class_name': reservation.class_schedule.classes.class_name,
                 'time': reservation.class_schedule.time.strftime('%H:%M'),
                 'duration': reservation.class_schedule.get_duration_display(),
             })
